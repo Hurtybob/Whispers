@@ -1,0 +1,26 @@
+Head
+link(rel="stylesheet" href="/css/bootstrap.min.css")
+link(rel="stylesheet" href="/css/style.css")
+script(src="/js/jquery-1.11.2.min.js")
+script(src="/js/bootstrap.min.js")
+Body hello 
+
+form(method="post")
+  .dropdown
+    button.btn.btn-default.dropwdown-toggle(type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true") Creature
+          span.caret 
+        ul.dropdown-menu(role='menu', aria-labelledby='dropdownMenu1')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Creature 1   
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Creature 2
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Creature 3
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Creature 4
+  .form-group
+    label(for="whisper") whisper
+    input.form-control(type="text" name="whisper")
+    
+  button(value="submit") submit
+    

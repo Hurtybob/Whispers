@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    link(rel="stylesheet" href="/css/bootstrap.min.css")
+    link(rel="stylesheet" href="/css/style.css")
+  body
+    .container
+        .row 
+          .col-xs-12
+            form(method="post")
+              .form-group
+                label(for="username") username
+                input.form-control(type="text" name="username")
+              .form-group
+                label(for="password") password
+                input.form-control(type="password" name="password")
+              button(value="submit") login
+    script(src="/js/jquery-1.11.2.min.js")
+    script(src="/js/bootstrap.min.js")
